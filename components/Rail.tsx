@@ -62,7 +62,7 @@ export default function Rail() {
         href="mailto:johnxjrafael@gmail.com"
         className="hidden lg:inline-block text-sm underline decoration-[var(--rule-strong)] hover:decoration-ink"
       >
-        johnxjrafael@gmail.com
+        rafaeljohnwork@gmail.com
       </a>
     </header>
   );

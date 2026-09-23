@@ -25,6 +25,14 @@ export default function Contact() {
         </a>
         */}
       </div>
+
+      <a
+        href="/rafael-john-cv.pdf"
+        download
+        className="inline-flex items-center gap-1.5 mt-8 font-mono text-sm border border-[var(--rule-strong)] px-3 py-2 hover:bg-ink hover:text-paper transition-colors"
+      >
+        Download CV (PDF)
+      </a>
     </section>
   );
 }

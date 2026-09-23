@@ -26,6 +26,13 @@ export default function Rail() {
             <p className="font-mono text-xs text-ink-soft mt-2 tracking-tight">
               data &amp; bi analyst
             </p>
+            <a
+              href="/rafael-john-cv.pdf"
+              download
+              className="hidden lg:inline-flex items-center gap-1.5 mt-4 font-mono text-xs border border-[var(--rule-strong)] px-2.5 py-1.5 hover:bg-ink hover:text-paper transition-colors"
+            >
+              Download CV
+            </a>
           </div>
         </div>
 

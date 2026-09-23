@@ -35,7 +35,7 @@ export default function Rail() {
           <dt className="text-ink-faint">status</dt>
           <dd>open to roles</dd>
           <dt className="text-ink-faint">focus</dt>
-          <dd>forecasting · BI · IoT data</dd>
+          <dd>forecasting · BI dashboards · analytics</dd>
         </dl>
       </div>
 

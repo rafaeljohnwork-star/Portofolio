@@ -5,13 +5,12 @@ export default function Hero() {
         portfolio · rev. 2026
       </p>
       <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.08] max-w-2xl">
-        I turn sensor noise and retail numbers into things people can decide
-        on.
+        I build the forecasts and dashboards that turn data into decisions.
       </h1>
       <p className="mt-6 max-w-lg text-ink-soft text-base sm:text-lg leading-relaxed">
-        Data analytics graduate working across forecasting, IoT telemetry,
-        and business intelligence dashboards — three years in Malaysia,
-        now based back home in Semarang and looking for the next role.
+        Data analytics graduate working across forecasting, dashboarding,
+        and applied analytics — three years in Malaysia, now based back
+        home in Semarang and looking for the next role.
       </p>
     </section>
   );

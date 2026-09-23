@@ -5,16 +5,16 @@ export default function About() {
       <div className="max-w-2xl space-y-5 font-display text-xl sm:text-2xl leading-relaxed italic">
         <p>
           I spent the last three years of my data analytics degree in
-          Malaysia, working between two kinds of numbers: the slow, seasonal
-          rhythm of retail sales, and the second-by-second readings coming
-          off farm sensors.
+          Malaysia, mostly doing the same thing in different settings:
+          turning a pile of raw numbers into a forecast, a dashboard, or a
+          query someone else can actually act on.
         </p>
         <p>
-          Both taught me the same lesson — a model or a dashboard is only
-          useful once someone who isn&apos;t you can act on it. That&apos;s the
-          bar I build to, whether it&apos;s a forecasting pipeline, a live
-          energy-monitoring dashboard, or a SQL query someone has to trust
-          without watching me write it.
+          That&apos;s shown up as a sales forecasting pipeline, a handful of
+          Power BI dashboards — including one built on live IoT sensor data
+          during an internship — and SQL projects built to be trusted
+          without anyone watching me write them. The common thread is the
+          same bar: useful to someone who isn&apos;t me.
         </p>
         <p>
           I&apos;m back in Semarang now, finishing up and looking for a data

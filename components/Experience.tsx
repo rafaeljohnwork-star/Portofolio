@@ -10,11 +10,13 @@ const entries = [
   },
   {
     period: "Jul — Oct 2025",
-    title: "Data Analytics Intern",
+    title: "Data Analyst Intern",
     org: "Miota & Mindrobotics Sdn. Bhd. — AIoT / precision farming",
     points: [
-      "Site visit and stakeholder interviews at a precision-farming facility in Johor, mapping how sensor data moved through the system",
-      "Built a Power BI dashboard on live IoT energy-monitoring data — voltage, current, load, frequency, power factor — for a Bank Indonesia facility",
+      "Site visit and stakeholder interviews at a precision-farming IoT pilot in Johor; mapped field-to-cloud data flow in a Data Flow Diagram and identified workflow gaps",
+      "Contributed to a System Requirement Document and helped define project KPIs, presenting findings directly to the company's CMO",
+      "Ran exploratory analysis on live IoT energy-monitoring data — voltage, current, load, frequency, power factor — from a Bank Indonesia facility, cleaning and structuring it for dashboard readiness",
+      "Built and iterated a Power BI dashboard, using Power Query for data modeling, visualizing energy consumption, load distribution, and power-factor stability; presented it to the CMO for client sign-off",
     ],
   },
 ];

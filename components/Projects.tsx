@@ -1,4 +1,10 @@
-import { ForecastMotif, SpatialMotif, TelemetryMotif } from "./motifs";
+import {
+  BarsMotif,
+  ChannelsMotif,
+  CubeMotif,
+  ForecastMotif,
+  SpatialMotif,
+} from "./motifs";
 
 const projects = [
   {
@@ -6,37 +12,67 @@ const projects = [
     accent: "var(--forecast)",
     accentDim: "var(--forecast-dim)",
     status: "complete",
-    title: "Apple Retail Sales Forecasting",
+    title: "Apple Retail Sales Forecasting Pipeline",
     subtitle: "Final Year Project",
     Motif: ForecastMotif,
     summary:
-      "A CRISP-DM sales forecasting pipeline for Apple retail data, built from raw daily records through to a decision-ready dashboard.",
+      "An end-to-end sales forecasting pipeline in Python, built with the CRISP-DM methodology from raw daily records through to a decision-ready dashboard and formal academic report.",
     facts: [
-      ["method", "Random Forest & XGBoost, Optuna-tuned"],
-      ["features", "29 engineered — holiday effects across 19 countries, hemisphere-based seasonality, product-launch proximity"],
-      ["result", "XGBoost: R² 0.75, MAE ≈16.2K, RMSE ≈23.3K"],
-      ["diagnostics", "SHAP feature attribution, residual analysis"],
-      ["delivery", "3-page Power BI dashboard — sales, geography, forecast accuracy"],
+      ["method", "Random Forest & XGBoost, Optuna-tuned (seeded for reproducibility)"],
+      ["features", "29 engineered — holiday effects across 19 countries, seasonal encoding, Apple product-launch proximity scoring"],
+      ["result", "R² 0.74–0.75, ~67% forecast accuracy, validated with SHAP analysis"],
+      ["delivery", "3-page Power BI dashboard and formal academic report"],
     ],
     tools: ["Python", "scikit-learn", "XGBoost", "Optuna", "SHAP", "Power BI"],
   },
   {
-    key: "telemetry",
-    accent: "var(--telemetry)",
-    accentDim: "var(--telemetry-dim)",
+    key: "velocity",
+    accent: "var(--cube)",
+    accentDim: "var(--cube-dim)",
     status: "complete",
-    title: "IoT Energy Monitoring Dashboard",
-    subtitle: "Internship — Miota & Mindrobotics",
-    Motif: TelemetryMotif,
+    title: "Business Intelligence System — Velocity Cycles",
+    subtitle: "University coursework, Year 2 BI module",
+    Motif: CubeMotif,
     summary:
-      "A live facility-energy dashboard built during an AIoT internship, preceded by fieldwork mapping how sensor data actually moved through the system.",
+      "An end-to-end BI solution built on SQL Server, following CRISP-DM, for sales data spanning the US, Canada, Australia, and the UK.",
     facts: [
-      ["fieldwork", "Site visit and stakeholder interviews at a precision-farming facility in Johor, mapping the data flow"],
-      ["channels", "Voltage, current, load, frequency, power factor"],
-      ["client", "Live IoT energy data for a Bank Indonesia facility"],
-      ["delivery", "Power BI dashboard for facility energy monitoring"],
+      ["model", "Star-schema OLAP cube across 6 dimensions (SSAS, MDX)"],
+      ["delivery", "8 interactive Power BI visuals plus a KPI tracking order quantity against a 55,000-unit target"],
     ],
-    tools: ["Power BI", "DAX", "Stakeholder interviews", "Data flow mapping"],
+    tools: ["SQL Server", "SSAS", "MDX", "Power BI"],
+  },
+  {
+    key: "housing",
+    accent: "var(--housing)",
+    accentDim: "var(--housing-dim)",
+    status: "complete",
+    title: "London Housing Data Analysis",
+    subtitle: "Personal project — Kaggle dataset",
+    Motif: BarsMotif,
+    summary:
+      "Cleaned and modelled a London-area housing dataset, then built dashboards surfacing price trends and property-type breakdowns across the region.",
+    facts: [
+      ["scope", "3,480 property listings across 57 city/county regions spanning London and neighbouring counties"],
+      ["cleaning", "Resolved 962 missing location values (~28% of the dataset)"],
+      ["delivery", "Power BI dashboards on price trends and property-type breakdowns"],
+    ],
+    tools: ["SQL", "Excel", "Power BI"],
+  },
+  {
+    key: "marketing",
+    accent: "var(--channels)",
+    accentDim: "var(--channels-dim)",
+    status: "complete",
+    title: "Marketing Campaign Performance Dashboard",
+    subtitle: "Personal project — public dataset",
+    Motif: ChannelsMotif,
+    summary:
+      "A Power BI dashboard over a large campaign-performance dataset, built for dynamic drill-down rather than a fixed set of charts.",
+    facts: [
+      ["scope", "200,000 records across 6 channels, 5 audience segments, and 5 U.S. locations"],
+      ["delivery", "Dynamic drill-down by channel, audience, month, and location (DAX, Power Query)"],
+    ],
+    tools: ["Power BI", "DAX", "Power Query"],
   },
   {
     key: "spatial",

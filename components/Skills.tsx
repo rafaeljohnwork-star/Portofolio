@@ -1,24 +1,31 @@
 const groups = [
   {
-    label: "languages & querying",
-    items: ["Python", "SQL", "DAX"],
+    label: "programming",
+    items: ["Python", "R", "SQL", "C", "C++", "Java"],
   },
   {
-    label: "modeling",
-    items: ["scikit-learn", "XGBoost", "Optuna", "SHAP"],
+    label: "libraries",
+    items: ["Pandas", "NumPy", "scikit-learn", "ggplot2", "Jupyter Notebook"],
   },
   {
-    label: "BI & delivery",
-    items: ["Power BI", "Jupyter", "dashboard design"],
+    label: "BI & visualization",
+    items: ["Power BI (DAX, Power Query)", "Tableau", "Excel", "SSAS", "MDX", "SQL Server"],
   },
   {
-    label: "domains",
+    label: "data skills",
     items: [
-      "retail forecasting",
-      "IoT telemetry",
-      "stakeholder data-flow mapping",
+      "Data cleaning",
+      "Requirements gathering",
+      "Process mapping (DFD)",
+      "Predictive modelling",
+      "Statistical analysis",
     ],
   },
+];
+
+const certifications = [
+  { name: "Python for Data Analysis", org: "Great Learning", date: "Feb 2025" },
+  { name: "Data Analytics with Python Workshop", org: null, date: "Mar 2025" },
 ];
 
 export default function Skills() {
@@ -39,6 +46,21 @@ export default function Skills() {
           </div>
         ))}
       </div>
+
+      <p className="font-mono text-xs text-ink-faint mt-10 mb-2">
+        certifications
+      </p>
+      <ul className="space-y-1 max-w-2xl">
+        {certifications.map((c) => (
+          <li key={c.name} className="text-sm">
+            {c.name}
+            {c.org ? ` — ${c.org}` : ""}{" "}
+            <span className="font-mono text-xs text-ink-faint">
+              {c.date}
+            </span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

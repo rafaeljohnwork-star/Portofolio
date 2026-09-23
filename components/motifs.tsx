@@ -96,3 +96,97 @@ export function SpatialMotif({ color }: MotifProps) {
     </svg>
   );
 }
+
+// Regional price bars — for the London housing analysis.
+export function BarsMotif({ color }: MotifProps) {
+  const heights = [22, 38, 30, 52, 44, 60, 34, 48, 26, 56, 40, 20, 46, 32, 50];
+  const w = 320 / heights.length;
+  return (
+    <svg
+      viewBox="0 0 320 90"
+      className="w-full h-20"
+      role="presentation"
+      aria-hidden="true"
+    >
+      {heights.map((h, i) => (
+        <rect
+          key={i}
+          x={i * w + 2}
+          y={70 - h}
+          width={w - 4}
+          height={h}
+          fill={color}
+          fillOpacity={h > 45 ? 1 : 0.45}
+        />
+      ))}
+      <line x1="0" y1="70" x2="320" y2="70" stroke={color} strokeOpacity="0.3" strokeWidth="1" />
+    </svg>
+  );
+}
+
+// A star-schema cube — for the OLAP / BI dimensional model project.
+export function CubeMotif({ color }: MotifProps) {
+  const cubes: [number, number][] = [
+    [160, 30],
+    [90, 60], [230, 60],
+    [50, 20], [130, 68], [190, 68], [270, 20],
+  ];
+  return (
+    <svg
+      viewBox="0 0 320 90"
+      className="w-full h-20"
+      role="presentation"
+      aria-hidden="true"
+    >
+      {cubes.slice(1).map(([x, y], i) => (
+        <line
+          key={i}
+          x1={cubes[0][0]}
+          y1={cubes[0][1]}
+          x2={x}
+          y2={y}
+          stroke={color}
+          strokeOpacity="0.35"
+          strokeWidth="1"
+        />
+      ))}
+      {cubes.map(([x, y], i) => (
+        <rect
+          key={i}
+          x={x - (i === 0 ? 7 : 5)}
+          y={y - (i === 0 ? 7 : 5)}
+          width={i === 0 ? 14 : 10}
+          height={i === 0 ? 14 : 10}
+          fill={i === 0 ? color : "none"}
+          stroke={color}
+          strokeWidth="1.5"
+        />
+      ))}
+    </svg>
+  );
+}
+
+// Channel/segment breakdown — for the marketing campaign dashboard.
+export function ChannelsMotif({ color }: MotifProps) {
+  const rows = [
+    { w: 220, y: 14 },
+    { w: 170, y: 32 },
+    { w: 260, y: 50 },
+    { w: 130, y: 68 },
+  ];
+  return (
+    <svg
+      viewBox="0 0 320 90"
+      className="w-full h-20"
+      role="presentation"
+      aria-hidden="true"
+    >
+      {rows.map((r, i) => (
+        <g key={i}>
+          <rect x="0" y={r.y - 6} width="300" height="12" fill={color} fillOpacity="0.12" />
+          <rect x="0" y={r.y - 6} width={r.w} height="12" fill={color} />
+        </g>
+      ))}
+    </svg>
+  );
+}

@@ -9,8 +9,8 @@ export default function Hero() {
       </h1>
       <p className="mt-6 max-w-lg text-ink-soft text-base sm:text-lg leading-relaxed">
         Data analytics graduate working across forecasting, dashboarding,
-        and applied analytics — three years in Malaysia, now based back
-        home in Semarang and looking for the next role.
+        and applied analytics. Three years in Malaysia, now based back home
+        in Semarang and looking for the next role.
       </p>
     </section>
   );

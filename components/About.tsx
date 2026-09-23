@@ -11,8 +11,8 @@ export default function About() {
         </p>
         <p>
           That&apos;s shown up as a sales forecasting pipeline, a handful of
-          Power BI dashboards — including one built on live IoT sensor data
-          during an internship — and SQL projects built to be trusted
+          Power BI dashboards (including one built on live IoT sensor data
+          during an internship), and SQL projects built to be trusted
           without anyone watching me write them. The common thread is the
           same bar: useful to someone who isn&apos;t me.
         </p>

@@ -1,6 +1,6 @@
 const entries = [
   {
-    period: "2023 — 2026",
+    period: "2023 to 2026",
     title: "B.S. Data Analytics",
     org: "Asia Pacific University (APU), Malaysia",
     points: [
@@ -9,13 +9,13 @@ const entries = [
     ],
   },
   {
-    period: "Jul — Oct 2025",
+    period: "Jul to Oct 2025",
     title: "Data Analyst Intern",
-    org: "Miota & Mindrobotics Sdn. Bhd. — AIoT / precision farming",
+    org: "Miota & Mindrobotics Sdn. Bhd. (AIoT / precision farming)",
     points: [
       "Site visit and stakeholder interviews at a precision-farming IoT pilot in Johor; mapped field-to-cloud data flow in a Data Flow Diagram and identified workflow gaps",
       "Contributed to a System Requirement Document and helped define project KPIs, presenting findings directly to the company's CMO",
-      "Ran exploratory analysis on live IoT energy-monitoring data — voltage, current, load, frequency, power factor — from a Bank Indonesia facility, cleaning and structuring it for dashboard readiness",
+      "Ran exploratory analysis on live IoT energy-monitoring data (voltage, current, load, frequency, power factor) from a Bank Indonesia facility, cleaning and structuring it for dashboard readiness",
       "Built and iterated a Power BI dashboard, using Power Query for data modeling, visualizing energy consumption, load distribution, and power-factor stability; presented it to the CMO for client sign-off",
     ],
   },
@@ -44,7 +44,7 @@ export default function Experience() {
                 {e.points.map((p) => (
                   <li
                     key={p}
-                    className="text-sm leading-relaxed pl-4 relative before:content-['—'] before:absolute before:left-0 before:text-ink-faint"
+                    className="text-sm leading-relaxed pl-4 relative before:content-['·'] before:absolute before:left-0 before:text-ink-faint"
                   >
                     {p}
                   </li>

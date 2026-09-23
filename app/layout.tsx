@@ -10,9 +10,9 @@ import "@fontsource/ibm-plex-mono/600.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rafael John — Data & BI Analyst",
+  title: "Rafael John · Data & BI Analyst",
   description:
-    "Portfolio of Rafael John: retail sales forecasting, IoT energy telemetry dashboards, and applied SQL projects.",
+    "Portfolio of Rafael John: retail sales forecasting, BI dashboards, and applied SQL projects.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

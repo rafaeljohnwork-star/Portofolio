@@ -19,7 +19,7 @@ const projects = [
       "An end-to-end sales forecasting pipeline in Python, built with the CRISP-DM methodology from raw daily records through to a decision-ready dashboard and formal academic report.",
     facts: [
       ["method", "Random Forest & XGBoost, Optuna-tuned (seeded for reproducibility)"],
-      ["features", "29 engineered — holiday effects across 19 countries, seasonal encoding, Apple product-launch proximity scoring"],
+      ["features", "29 engineered: holiday effects across 19 countries, seasonal encoding, Apple product-launch proximity scoring"],
       ["result", "R² 0.74–0.75, ~67% forecast accuracy, validated with SHAP analysis"],
       ["delivery", "3-page Power BI dashboard and formal academic report"],
     ],
@@ -30,7 +30,7 @@ const projects = [
     accent: "var(--cube)",
     accentDim: "var(--cube-dim)",
     status: "complete",
-    title: "Business Intelligence System — Velocity Cycles",
+    title: "Business Intelligence System for Velocity Cycles",
     subtitle: "University coursework, Year 2 BI module",
     Motif: CubeMotif,
     summary:
@@ -47,7 +47,7 @@ const projects = [
     accentDim: "var(--housing-dim)",
     status: "complete",
     title: "London Housing Data Analysis",
-    subtitle: "Personal project — Kaggle dataset",
+    subtitle: "Personal project, Kaggle dataset",
     Motif: BarsMotif,
     summary:
       "Cleaned and modelled a London-area housing dataset, then built dashboards surfacing price trends and property-type breakdowns across the region.",
@@ -64,7 +64,7 @@ const projects = [
     accentDim: "var(--channels-dim)",
     status: "complete",
     title: "Marketing Campaign Performance Dashboard",
-    subtitle: "Personal project — public dataset",
+    subtitle: "Personal project, public dataset",
     Motif: ChannelsMotif,
     summary:
       "A Power BI dashboard over a large campaign-performance dataset, built for dynamic drill-down rather than a fixed set of charts.",
@@ -83,12 +83,12 @@ const projects = [
     subtitle: "Independent SQL project",
     Motif: SpatialMotif,
     summary:
-      "Scraping local property listings and matching them against buyer personas with SQL — built for a relative who works as a property agent, and picked specifically to be less templated than the usual portfolio dataset.",
+      "Scraping local property listings and matching them against buyer personas with SQL. Built for a relative who works as a property agent, and picked specifically to be less templated than the usual portfolio dataset.",
     facts: [
       ["source", "Scraped property listings in his hometown"],
       ["method", "SQL matching against modeled buyer personas"],
       ["for", "A relative selling houses on commission"],
-      ["state", "Actively being built — results to follow"],
+      ["state", "Actively being built, results to follow"],
     ],
     tools: ["SQL", "Web scraping"],
   },

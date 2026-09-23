@@ -54,7 +54,7 @@ export default function Skills() {
         {certifications.map((c) => (
           <li key={c.name} className="text-sm">
             {c.name}
-            {c.org ? ` — ${c.org}` : ""}{" "}
+            {c.org ? `, ${c.org}` : ""}{" "}
             <span className="font-mono text-xs text-ink-faint">
               {c.date}
             </span>
